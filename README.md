@@ -12,6 +12,12 @@ GUI manager for RBAC (Role Base Access Control) Yii2. Easy to manage authorizati
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/mdmsoft/yii2-admin/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/mdmsoft/yii2-admin/?branch=master)
 [![Code Climate](https://img.shields.io/codeclimate/github/mdmsoft/yii2-admin.svg)](https://codeclimate.com/github/mdmsoft/yii2-admin)
 
+### Modify Record
+
+|time|author|detail|
+|---|---|---|
+|`2021-03-02 15:00`|liyang|auto record menu insert/update/delete options|
+
 Documentation
 -------------
 > **Important: If you install version 3.x, please see [this readme](https://github.com/mdmsoft/yii2-admin/blob/3.master/README.md#upgrade-from-2x).**
@@ -73,3 +79,4 @@ return [
 [**More...**](docs/guide/configuration.md)
 
 [screenshots](https://goo.gl/r8RizT)
+

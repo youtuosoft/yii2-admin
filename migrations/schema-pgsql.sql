@@ -7,6 +7,7 @@
 
 drop table if exists "menu";
 drop table if exists "user";
+drop table if exists "epmms_menu_record_op";
 
 create table "menu"
 (
@@ -30,4 +31,20 @@ create table "user"
     "status" integer not null default 10,
     "created_at" integer not null,
     "updated_at" integer not null
+);
+
+CREATE TABLE "epmms_menu_record_op" (
+     "menu_op_id" serial NOT NULL PRIMARY KEY,
+     "menu_op_type" VARCHAR(16) NOT NULL,
+     "menu_op_name" VARCHAR(128),
+     "menu_op_route" VARCHAR(256),
+     "menu_op_parent" INTEGER,
+     "menu_op_order" INTEGER,
+     "menu_op_parent_info_recursion" TEXT,
+     "menu_op_old_name" VARCHAR(128),
+     "menu_op_old_route" VARCHAR(256),
+     "menu_op_old_parent" INTEGER,
+     "menu_op_old_order" INTEGER,
+     "menu_op_old_parent_info_recursion" TEXT,
+     "create_datetime" TIMESTAMP WITHOUT TIME ZONE
 );
