@@ -46,5 +46,6 @@ CREATE TABLE "epmms_menu_record_op" (
      "menu_op_old_parent" INTEGER,
      "menu_op_old_order" INTEGER,
      "menu_op_old_parent_info_recursion" TEXT,
-     "create_datetime" TIMESTAMP WITHOUT TIME ZONE
+     "create_datetime" TIMESTAMP WITHOUT TIME ZONE,
+     "export_datetime" TIMESTAMP WITHOUT TIME ZONE
 );

@@ -32,6 +32,7 @@ class m210302_050000_create_menu_op extends Migration
             'menu_op_old_order' => $this->integer()->comment('原排序'),
             'menu_op_old_parent_info_recursion' => $this->text()->comment('原上级菜单'),
             'create_datetime' => $this->datetime()->comment('执行时间'),
+            'export_datetime' => $this->datetime()->comment('导出时间'),
         ], $tableOptions);
     }
 

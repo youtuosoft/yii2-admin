@@ -36,6 +36,7 @@ use yii\db\Query;
  * @property int $menu_op_old_order 原排序
  * @property string $menu_op_old_parent_info_recursion 原父级菜单信息,递归记录每级parentinfo
  * @property string $create_datetime 执行时间
+ * @property string $export_datetime 导出时间
  */
 class MenuRecordOp extends \yii\db\ActiveRecord
 {
@@ -89,10 +90,11 @@ class MenuRecordOp extends \yii\db\ActiveRecord
                     'menu_op_old_parent',
                     'menu_op_old_order',
                     'menu_op_old_parent_info_recursion',
+                    'create_datetime',
+                    'export_datetime',
                 ],
                 'safe',
             ],
-            [['create_datetime'], 'date', 'format' => Yii::$app->formatter->datetimeFormat],
         ];
     }
 
@@ -113,6 +115,8 @@ class MenuRecordOp extends \yii\db\ActiveRecord
             'menu_op_old_parent' => Yii::t('rbac-admin', '原父级菜单'),
             'menu_op_old_order' => Yii::t('rbac-admin', '原排序'),
             'menu_op_old_parent_info_recursion' => Yii::t('rbac-admin', '原上级菜单全部节点'),
+            'create_datetime' => Yii::t('rbac-admin', '执行时间'),
+            'export_datetime' => Yii::t('rbac-admin', '导出时间'),
         ];
     }
 }
